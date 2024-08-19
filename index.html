@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <h2>Dani cihuyyyy</h2>
+                <p>Jabatan: Developer warung mbok yem</p>
+            </div>
+            <div class="time">
+                <p id="current-time"></p>
+            </div>
+        </header>
+
+        <main>
+            <div class="todo-form">
+                <textarea id="task" placeholder="Tuliskan tugas Anda di sini..."></textarea>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="submit">Tambah Tugas</button>
+            </div>
+
+            <div class="todo-list">
+                <h3>To-Do List</h3>
+                <ul id="todo-items"></ul>
+            </div>
+
+            <div class="done-list">
+                <h3>Done List</h3>
+                <ul id="done-items"></ul>
+            </div>
+        </main>
+
+        <footer>
+            <button id="delete-all">Hapus Semua</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

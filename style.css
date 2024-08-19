@@ -1,0 +1,144 @@
+/* Mengatur gaya dasar */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('assets/background1.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333333;
+}
+
+/* Container utama */
+.container {
+    width: 95%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9); /* Transparansi background */
+    border-radius: 12px; /* Membuat sudut lebih bulat */
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Menambah efek bayangan */
+    backdrop-filter: blur(10px); /* Efek blur untuk latar belakang */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f1f1f1; /* Garis pemisah di bawah header */
+    padding-bottom: 15px;
+}
+
+.profile h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #007bff; /* Warna teks utama */
+}
+
+.profile p {
+    margin: 5px 0 0;
+    color: #6c757d;
+    font-style: italic; /* Menambahkan gaya italic */
+}
+
+.time p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Formulir to-do */
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.todo-form textarea, 
+.todo-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px; /* Membuat sudut lebih bulat */
+    margin-bottom: 12px;
+    background-color: #f8f9fa; /* Warna background yang lebih lembut */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.todo-form textarea:focus, 
+.todo-form select:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Efek bayangan saat fokus */
+}
+
+.todo-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Daftar to-do dan selesai */
+.todo-list, .done-list {
+    margin-bottom: 25px;
+}
+
+.todo-list ul, .done-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-list li, .done-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.todo-list li.done {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+/* Tombol footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer button {
+    width: 100%;
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+    background-color: #c82333;
+}
